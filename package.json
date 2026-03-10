@@ -1,0 +1,28 @@
+{
+  "name": "restaurant-homepage",
+  "version": "1.0.0",
+  "description": "A dynamically rendered restaurant homepage bundled with webpack",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YousefO-O/restaurant-homepage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/YousefO-O/restaurant-homepage/issues"
+  },
+  "homepage": "https://github.com/YousefO-O/restaurant-homepage#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.6",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.3"
+  }
+}
