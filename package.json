@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/YousefO-O/restaurant-homepage#readme",
   "devDependencies": {
+    "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.6",
     "webpack": "^5.105.4",
     "webpack-cli": "^6.0.1",
