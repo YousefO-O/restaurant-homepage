@@ -2,6 +2,7 @@ import deerImage from './assets/deer dish.jpeg';
 
 export function loadHomeTab() {
     const contentDiv = document.querySelector('#content');
+    contentDiv.replaceChildren('');
     const header = document.createElement('h1');
     header.textContent = 'Welcome to Dan\'s Deer';
     const description = document.createElement('p');

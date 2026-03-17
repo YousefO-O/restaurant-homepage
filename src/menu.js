@@ -11,8 +11,8 @@ class MenuItem {
 const menuItems = [
 ];
 export function loadMenuTab() {
-    const contentDiv = document.createElement('div');
-    contentDiv.id = 'content';
+    const contentDiv = document.querySelector('#content');
+    contentDiv.replaceChildren('');
     const header = document.createElement('h1');
     header.textContent = 'Menu';
     const menuDiv = document.createElement('div');
