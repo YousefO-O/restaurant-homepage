@@ -13,10 +13,11 @@ const menuItems = [
 export function loadMenuTab() {
     const contentDiv = document.querySelector('#content');
     contentDiv.replaceChildren('');
+    const menuDiv = document.createElement('div');
     const header = document.createElement('h1');
     header.textContent = 'Menu';
-    const menuDiv = document.createElement('div');
-    menuDiv.id = 'menu-div';
+    const itemsDiv = document.createElement('div');
+    itemsDiv.id = 'menu-div';
     menuItems.forEach(item => {
         const itemDiv = document.createElement('div');
         itemDiv.classList.add('food-div');
@@ -52,9 +53,9 @@ export function loadMenuTab() {
         itemDiv.appendChild(itemName);
         itemDiv.appendChild(aboutDiv);
         itemDiv.appendChild(detailsDiv);
-        menuDiv.appendChild(itemDiv);
+        itemsDiv.appendChild(itemDiv);
     });
-    contentDiv.appendChild(header);
+    menuDiv.appendChild(header);
+    menuDiv.appendChild(itemsDiv);
     contentDiv.appendChild(menuDiv);
-    document.querySelector('body').appendChild(contentDiv);
 };
