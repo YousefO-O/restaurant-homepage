@@ -16,8 +16,6 @@ const contacts = [
 export function loadContactTab() {
     const contentDiv = document.querySelector('#content');
     contentDiv.replaceChildren('');
-    const contactTabDiv = document.createElement('div');
-    contactTabDiv.id = 'contact-tab';
 
     const header = document.createElement('h1');
     header.textContent = 'Contact Us';
@@ -47,7 +45,6 @@ export function loadContactTab() {
         contactDiv.appendChild(contactEmail);
         contactsDiv.appendChild(contactDiv);
     });
-    contactTabDiv.appendChild(header);
-    contactTabDiv.appendChild(contactsDiv);
-    contentDiv.appendChild(contactTabDiv);
+    contentDiv.appendChild(header);
+    contentDiv.appendChild(contactsDiv);
 }
