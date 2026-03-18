@@ -3,7 +3,8 @@ import deerImage from './assets/deer dish.jpeg';
 export function loadHomeTab() {
     const contentDiv = document.querySelector('#content');
     contentDiv.replaceChildren('');
-    const homeDiv = document.createElement('div');
+    const homeTabDiv = document.createElement('div');
+    homeTabDiv.id = 'home-tab';
     const header = document.createElement('h1');
     header.textContent = 'Welcome to Dan\'s Deer';
     const description = document.createElement('p');
@@ -11,8 +12,8 @@ export function loadHomeTab() {
     const image = document.createElement('img');
     image.src = deerImage;
     image.alt = 'Deer dish';
-    homeDiv.appendChild(header);
-    homeDiv.appendChild(description);
-    homeDiv.appendChild(image);
-    contentDiv.appendChild(homeDiv);
+    homeTabDiv.appendChild(header);
+    homeTabDiv.appendChild(description);
+    homeTabDiv.appendChild(image);
+    contentDiv.appendChild(homeTabDiv);
 };
