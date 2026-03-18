@@ -1,8 +1,10 @@
 import { loadHomeTab } from "./home.js";
 import { loadMenuTab } from './menu.js';
+import {loadContactTab } from './contact.js';
 loadHomeTab();
 const homeTabButton = document.querySelector('#home-tab-button');
 const menuTabButton = document.querySelector('#menu-tab-button');
-const contactTabButton = document.querySelector('#home-tab-button');
+const contactTabButton = document.querySelector('#contact-tab-button');
 homeTabButton.addEventListener('click', loadHomeTab);
 menuTabButton.addEventListener('click', loadMenuTab);
+contactTabButton.addEventListener('click', loadContactTab);
