@@ -1,4 +1,4 @@
-import deerImage from './assets/deer dish.jpeg';
+import deerImage from '../assets/deer dish.jpeg';
 
 export function loadHomeTab() {
     const contentDiv = document.querySelector('#content');

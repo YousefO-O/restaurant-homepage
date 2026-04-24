@@ -1,6 +1,6 @@
-import { loadHomeTab } from "./home.js";
-import { loadMenuTab } from './menu.js';
-import {loadContactTab } from './contact.js';
+import { loadHomeTab } from "./tabs/home.js";
+import { loadMenuTab } from './tabs/menu.js';
+import {loadContactTab } from './tabs/contact.js';
 loadHomeTab();
 const homeTabButton = document.querySelector('#home-tab-button');
 const menuTabButton = document.querySelector('#menu-tab-button');
