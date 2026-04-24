@@ -1,5 +1,5 @@
 import orangeJuice from './assets/orange-juice.jpeg';
-
+const menuItems = [];
 class MenuItem {
     constructor(name, description, price, calories, image, type) {
         this.name = name;
@@ -13,12 +13,13 @@ class MenuItem {
         };
     };
 };
-const menuItems = [];
+new MenuItem('Orange Juice', 'Refreshing orange juice, you\'ll love it!', 12, 215, orangeJuice, 'beverage');
+new MenuItem('Pineapple Juice', 'Amazing pineapple juice that spongebob loves, so you should love it too - right?', 15, 300, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZyAdIeBVYPpscKSDGiBZQ-iomeYPMm10HDA&s', 'beverage');
 export function loadMenuTab() {
     const contentDiv = document.querySelector('#content');
     contentDiv.replaceChildren('');
     const header = document.createElement('h1');
-    header.textContent = 'Menu';
+    header.textContent = 'Menu';    
 
     const beveragesHeader = document.createElement('h2');
     beveragesHeader.textContent = 'Beverages';
