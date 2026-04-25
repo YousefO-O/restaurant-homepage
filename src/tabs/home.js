@@ -1,3 +1,4 @@
+import '../styles.css';
 import deerImage from '../assets/deer dish.jpeg';
 
 export function loadHomeTab() {

@@ -1,0 +1,23 @@
+body {
+    background: rgb(255, 207, 117);
+}
+
+#content {
+    margin: auto;
+    width: 600px;
+}
+
+
+h1 {
+    border: 3px solid brown;
+    background-color: orange;
+    padding: 1rem;
+    text-align: center;
+}
+
+h2 {
+    border: 3px solid brown;
+    background-color: orange;
+    padding: .5rem 5rem;
+    text-align: center;
+}
